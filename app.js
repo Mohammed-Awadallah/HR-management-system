@@ -4,7 +4,7 @@ function Employee(employeeID, fullName, department, level ) {
     this.fullName = fullName;
     this.dept = department;
     this.lvl = level;
-    this.sal = salary;
+    this.sal = 0;
     this.img = '#';
     arr.push(this);
 
@@ -35,6 +35,7 @@ Employee.prototype.calSal = function() {
             break;
     }
     sa = sa - ((7.5 * 100)/100);
+    this.sal = sa;
     return sa;
 }
 
@@ -50,5 +51,6 @@ arr.forEach(element => {
     element.callNameandSal();
     
 });
+console.log(arr);
 
 
