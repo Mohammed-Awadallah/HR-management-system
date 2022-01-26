@@ -38,6 +38,8 @@ body {
    }
 
    
-
+main{
+    flex: content;
+}
 
 
