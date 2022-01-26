@@ -19,7 +19,7 @@
         </nav>
     </header>
     <main>
-        <form id = "form">
+        <form style="margin-left: 500px; margin-top: 100px;" id = "form">
             <label for="embloyeeName">Full name</label>
             <input id="embloyeeName" type="text" name="embloyeeName" required>
             <br>
@@ -28,6 +28,7 @@
                 <option value="Administration">Administration</option>
                 <option value="Development">Development</option>
                 <option value="Finance">Finance</option>
+                <option value="Marketing">Marketing</option>
               </select>
               <br>
               <label for="level">choose a level</label>
@@ -40,11 +41,12 @@
               <label for="image">Image url</label>
               <input id="image" type="text" name="image">
               <input type="submit" value="Add an employee">
-              <div id="employeeDiv"></div>
+              
 
             
         </form>
-        
+        <div id="employeeDiv">
+        </div>
     </main>
     
     <footer>
@@ -52,5 +54,6 @@
         <copyright>© 2022 - All Rights Reserved -  <a href="#"> ASAC </a></copyright>
     </footer>
     <script src="./app.js"></script>
+
 </body>
 </html>
