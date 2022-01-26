@@ -73,6 +73,9 @@ function generatID() {
 }
 
 
+
+
+
 Employee.prototype.render = function () {
     var newDiv = document.createElement("div");
     newDiv.style.backgroundColor = "#980F5A";
@@ -88,7 +91,7 @@ Employee.prototype.render = function () {
     newDiv.appendChild(image).width ="200";
     employeeDiv.appendChild(newDiv);
 
-    let info = document.createElement('p')
+    let info = document.createElement('h4')
     info.textContent = "name : " +this.fullName + "  -  " + "ID: " + this.id + " " +  "Department : " 
     + this.dept + " - " + "level : " + this.lvl  + " - " + "salary : " +  this.calSal();
      
@@ -104,5 +107,5 @@ arr.forEach(element => {
 
 
 
-
+console.table(arr);
 
