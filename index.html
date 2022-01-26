@@ -19,13 +19,38 @@
         </nav>
     </header>
     <main>
-        <script src="./app.js"></script>
+        <form id = "form">
+            <label for="embloyeeName">Full name</label>
+            <input id="embloyeeName" type="text" name="embloyeeName" required>
+            <br>
+            <label for="department">choose a department</label>
+            <select name="department" id="department">
+                <option value="Administration">Administration</option>
+                <option value="Development">Development</option>
+                <option value="Finance">Finance</option>
+              </select>
+              <br>
+              <label for="level">choose a level</label>
+            <select name="level" id="level" >
+                <option value="Junior">Junior</option>
+                <option value="Mid-Senior">Mid-Senior</option>
+                <option value="Senior">Senior</option>
+              </select>
+              <br>
+              <label for="image">Image url</label>
+              <input id="image" type="text" name="image">
+              <input type="submit" value="Add an employee">
+              <div id="employeeDiv"></div>
+
+            
+        </form>
+        
     </main>
     
     <footer>
 
         <copyright>© 2022 - All Rights Reserved -  <a href="#"> ASAC </a></copyright>
     </footer>
-    
+    <script src="./app.js"></script>
 </body>
 </html>
