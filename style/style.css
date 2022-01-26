@@ -37,9 +37,12 @@ body {
      color: white;
    }
 
-   
-main{
-    flex: content;
-}
 
+ #employeeDiv{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+ }
 
